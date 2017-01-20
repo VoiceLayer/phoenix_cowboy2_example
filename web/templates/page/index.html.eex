@@ -1,6 +1,9 @@
 <div class="jumbotron">
-  <h2><%= gettext "Welcome to %{name}", name: "Phoenix!" %></h2>
-  <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
+  <%= if @http2 do %>
+    <h2 style="color: green;">You are using HTTP/2</h2>
+  <% else %>
+    <h2 style="color: red;">You are not using HTTP/2</h2>
+  <% end %>
 </div>
 
 <div class="row marketing">
