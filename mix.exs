@@ -17,7 +17,7 @@ defmodule PhoenixCowboy2Example.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [mod: {PhoenixCowboy2Example, []},
-     applications: [:phoenix, :phoenix_pubsub, :phoenix_html, :cowboy, :logger, :gettext]]
+     applications: [:phoenix, :phoenix_pubsub, :phoenix_html, :phoenix_cowboy2, :logger, :gettext, :ranch, :cowlib, :cowboy]]
   end
 
   # Specifies which paths to compile per environment.
@@ -31,8 +31,11 @@ defmodule PhoenixCowboy2Example.Mixfile do
     [{:phoenix, "~> 1.2.0"},
      {:phoenix_pubsub, "~> 1.0"},
      {:phoenix_html, "~> 2.6"},
+     {:phoenix_cowboy2, github: "voicelayer/phoenix_cowboy2"},
+     {:ranch, github: "ninenines/ranch", ref: "1.3.0", override: true},
+     {:cowlib, github: "ninenines/cowlib", ref: "master", override: true},
+     {:cowboy, github: "ninenines/cowboy", ref: "2.0.0-pre.4", override: true},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
-     {:gettext, "~> 0.11"},
-     {:cowboy, "~> 1.0"}]
+     {:gettext, "~> 0.11"}]
   end
 end

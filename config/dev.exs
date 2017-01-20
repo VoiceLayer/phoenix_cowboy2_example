@@ -30,6 +30,7 @@ config :phoenix_cowboy2_example, PhoenixCowboy2Example.Endpoint,
   http: [
     port: 4002
   ],
+  handler: Phoenix.Endpoint.Cowboy2Handler,
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
