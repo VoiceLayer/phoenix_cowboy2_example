@@ -32,9 +32,9 @@ defmodule PhoenixCowboy2Example.Mixfile do
      {:phoenix_pubsub, "~> 1.0"},
      {:phoenix_html, "~> 2.6"},
      {:phoenix_cowboy2, github: "voicelayer/phoenix_cowboy2"},
-     {:ranch, github: "ninenines/ranch", ref: "1.3.0", override: true},
-     {:cowlib, github: "ninenines/cowlib", ref: "master", override: true},
-     {:cowboy, github: "ninenines/cowboy", ref: "2.0.0-pre.4", override: true},
+     {:ranch, github: "ninenines/ranch", ref: "1.3.0", override: true, manager: :rebar3},
+     {:cowlib, github: "ninenines/cowlib", ref: "master", override: true, manager: :rebar3},
+     {:cowboy, github: "ninenines/cowboy", ref: "2.0.0-pre.4", override: true, manager: :rebar3},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.11"}]
   end
