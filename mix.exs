@@ -31,7 +31,7 @@ defmodule PhoenixCowboy2Example.Mixfile do
     [{:phoenix, "~> 1.2.0"},
      {:phoenix_pubsub, "~> 1.0"},
      {:phoenix_html, "~> 2.6"},
-     {:phoenix_cowboy2, github: "voicelayer/phoenix_cowboy2"},
+     {:phoenix_cowboy2, github: "voicelayer/phoenix_cowboy2", branch: "feat/http2-transport"},
      {:ranch, github: "ninenines/ranch", ref: "1.3.0", override: true, manager: :rebar3},
      {:cowlib, github: "ninenines/cowlib", ref: "master", override: true, manager: :rebar3},
      {:cowboy, github: "ninenines/cowboy", ref: "2.0.0-pre.7", override: true, manager: :rebar3},

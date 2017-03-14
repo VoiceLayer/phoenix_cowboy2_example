@@ -2,10 +2,10 @@ defmodule PhoenixCowboy2Example.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "room:*", PhoenixCowboy2Example.RoomChannel
+  channel "room:*", PhoenixCowboy2Example.RoomChannel
 
   ## Transports
-  transport :websocket, Phoenix.Transports.WebSocket
+  transport :http2, Phoenix.Transports.HTTP2
   # transport :longpoll, Phoenix.Transports.LongPoll
 
   # Socket params are passed from the client and can

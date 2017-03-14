@@ -4,7 +4,7 @@
   "gettext": {:hex, :gettext, "0.13.0", "daafbddc5cda12738bb93b01d84105fe75b916a302f1c50ab9fb066b95ec9db4", [:mix], []},
   "mime": {:hex, :mime, "1.0.1", "05c393850524767d13a53627df71beeebb016205eb43bfbd92d14d24ec7a1b51", [:mix], []},
   "phoenix": {:hex, :phoenix, "1.2.1", "6dc592249ab73c67575769765b66ad164ad25d83defa3492dc6ae269bd2a68ab", [:mix], [{:cowboy, "~> 1.0", [hex: :cowboy, optional: true]}, {:phoenix_pubsub, "~> 1.0", [hex: :phoenix_pubsub, optional: false]}, {:plug, "~> 1.1", [hex: :plug, optional: false]}, {:poison, "~> 1.5 or ~> 2.0", [hex: :poison, optional: false]}]},
-  "phoenix_cowboy2": {:git, "https://github.com/voicelayer/phoenix_cowboy2.git", "500789d45ff7f49076a2536f0dff49a87bf42fc2", []},
+  "phoenix_cowboy2": {:git, "https://github.com/voicelayer/phoenix_cowboy2.git", "7a60e8a2bb2e1db0df592ecc968dc12aacc54b6b", [branch: "feat/http2-transport"]},
   "phoenix_html": {:hex, :phoenix_html, "2.9.2", "371160b30cf4e10443b015efce6f03e1f19aae98ff6487620477b13a5b2ef660", [:mix], [{:plug, "~> 1.0", [hex: :plug, optional: false]}]},
   "phoenix_live_reload": {:hex, :phoenix_live_reload, "1.0.7", "167ab0942e88d1d4a597996cf7dd8d2b014cc14d3f9472b58858cde8dd9ac2e4", [:mix], [{:fs, "~> 2.12.0", [hex: :fs, optional: false]}, {:phoenix, "~> 1.0 or ~> 1.2-rc", [hex: :phoenix, optional: false]}]},
   "phoenix_pubsub": {:hex, :phoenix_pubsub, "1.0.1", "c10ddf6237007c804bf2b8f3c4d5b99009b42eca3a0dfac04ea2d8001186056a", [:mix], []},
