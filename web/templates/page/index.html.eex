@@ -1,39 +1,27 @@
+<div class="row">
+  <div class="col-sm-6">
+    <img width="400" src="<%= static_path(@conn, "/images/chart.png") %>">
+  </div>
+
+  <div class="col-sm-6">
+    <img width="200" src="<%= static_path(@conn, "/images/book.jpg") %>">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <img width="300" src="<%= static_path(@conn, "/images/unicorn.jpg") %>">
+  </div>
+
+  <div class="col-sm-6">
+    <img width="300" src="<%= static_path(@conn, "/images/magic.jpg") %>">
+  </div>
+</div>
+
 <div class="jumbotron">
   <%= if @http2 do %>
     <h2 style="color: green;">You are using HTTP/2</h2>
   <% else %>
     <h2 style="color: red;">You are not using HTTP/2</h2>
   <% end %>
-</div>
-
-<div class="row marketing">
-  <div class="col-lg-6">
-    <h4>Resources</h4>
-    <ul>
-      <li>
-        <a href="http://phoenixframework.org/docs/overview">Guides</a>
-      </li>
-      <li>
-        <a href="https://hexdocs.pm/phoenix">Docs</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="col-lg-6">
-    <h4>Help</h4>
-    <ul>
-      <li>
-        <a href="http://groups.google.com/group/phoenix-talk">Mailing list</a>
-      </li>
-      <li>
-        <a href="http://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on freenode IRC</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">@elixirphoenix</a>
-      </li>
-    </ul>
-  </div>
 </div>

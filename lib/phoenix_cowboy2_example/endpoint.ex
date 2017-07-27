@@ -3,6 +3,8 @@ defmodule PhoenixCowboy2Example.Endpoint do
 
   socket "/socket", PhoenixCowboy2Example.UserSocket
 
+  plug :dial_up
+
   # Serve at "/" the static files from "priv/static" directory.
   #
   # You should set gzip to true if you are running phoenix.digest
@@ -39,4 +41,15 @@ defmodule PhoenixCowboy2Example.Endpoint do
     signing_salt: "6kyaoU6S"
 
   plug PhoenixCowboy2Example.Router
+
+  def dial_up(conn, _) do
+    Plug.Conn.register_before_send(conn, fn conn ->
+      case conn.path_info do
+        [] -> :timer.sleep(1_000)
+        _ -> :timer.sleep(3_000)
+      end
+
+      conn
+    end)
+  end
 end

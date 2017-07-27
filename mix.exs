@@ -31,10 +31,11 @@ defmodule PhoenixCowboy2Example.Mixfile do
     [{:phoenix, "~> 1.2.0"},
      {:phoenix_pubsub, "~> 1.0"},
      {:phoenix_html, "~> 2.6"},
+     {:plug_cowboy2, github: "Gazler/plug_cowboy2", branch: "feat/server-push", override: true},
      {:phoenix_cowboy2, github: "voicelayer/phoenix_cowboy2"},
      {:ranch, "~> 1.4.0", override: true},
      {:cowlib, github: "ninenines/cowlib", ref: "2.0.0-rc.1", override: true, manager: :rebar3},
-     {:cowboy, github: "ninenines/cowboy", ref: "2.0.0-rc.1", override: true, manager: :rebar3},
+     {:cowboy, github: "ninenines/cowboy", override: true, manager: :rebar3},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.11"}]
   end
