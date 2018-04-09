@@ -1,3 +1,14 @@
+**Update, April 2018:**
+Phoenix master supports Cowboy 2 now, so instead of using (the instructions from) this repository you can also do the following:
+
+```
+def deps do
+  {:phoenix, github: "phoenixframework/phoenix", override: true},
+  ...
+   {:cowboy, "~> 2.3"}
+end
+```
+
 # PhoenixCowboy2Example
 
 An example application for using [phoenix_cowboy2](https://github.com/voicelayer/phoenix_cowboy2).
